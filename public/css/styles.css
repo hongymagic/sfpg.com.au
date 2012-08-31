@@ -1,0 +1,44 @@
+@font-face                { font-family: 'Intro'; src: url('../fonts/Intro-Regular.ttf'); }
+
+body                      { margin: 0; padding: 0; background: #efefef url(../img/tile.gif) repeat; }
+.container                { margin: 15px auto; max-width: 700px; }
+.container > img          { width: 100%; }
+
+a                         { color: #b00; text-decoration: none; }
+a:visited                 { color: #222; }
+a:active                  { color: #b00; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote                { margin: 15px 0; padding: 15px 0; text-shadow: 0 1px 1px #fff; }
+h1                        { font-family: 'Intro', sans-serif; }
+h2,
+h4,
+blockquote                { font-family: 'Lobster', cursive; font-size: 1.35rem; }
+h2                        { font-size: 1.5rem; color: #b00; text-shadow: 0 1px 2px #bbc; }
+h3                        { font-family: 'Intro', sans-serif; }
+blockquote                { text-align: center; line-height: 1; }
+blockquote h2:first-child { margin-top: 0; padding-top: 0; }
+
+/* Header */
+header                    { background: #fff; }
+header .container         { margin-top: 0; padding-top: 15px; }
+header div.sf-logo        { width: 200px; float: left; }
+header div.sf-logo svg    { margin: 0 auto; display: block; }
+header div.sf-logo h1     { margin: 0; font-size: 60px; text-align: center; }
+header h2                 { text-align: center; }
+
+/* Navigation */
+header nav                { float: right; }
+header nav                { font-family: 'Lobster', cursive; }
+header nav a              { margin: 0 15px; font-size: 1.25rem; color: #000; text-decoration: none; }
+header nav a:visited      { color: #222; }
+header nav a:active       { color: #b00; }
+
+@media only screen and (max-width: 760px) {
+	.container            { padding: 0 10px; }
+	header nav a          { margin: 0; display: block; }
+}
