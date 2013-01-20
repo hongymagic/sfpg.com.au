@@ -1,0 +1,70 @@
+@import "mixins.less";
+
+footer {
+	margin: 20px 0 0; padding: 0;
+
+	background-color: #c00;
+	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+
+	.container {
+		.contained;
+		.clearfix;
+
+		position: relative;
+	}
+
+	.offices {
+		margin: 10px 0;
+		.clearfix;
+
+		h1 {
+			margin: 10px 0;
+			font-size: 13px;
+		}
+
+		.contact {
+			width: 215px;
+			float: left;
+
+			&, h2 {
+				font-size: 12px;
+			}
+
+			h2, span, a {
+				margin: 0; padding: 0;
+				display: block;
+			}
+
+			a {
+				.reset-link-styles;
+
+				&.tel {
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+
+	.social {
+		position: absolute;
+		top: 15px; right: 0;
+
+		.facebook {
+			text-indent: -9999px;
+			background: url(/img/facebook-logo.png) no-repeat top left;
+			display: block;
+			width: 22px; height: 22px;
+		}
+
+		.twitter {
+			.hidden;
+		}
+	}
+
+	.copyright {
+		display: inline-block;
+		float: right;
+		font-size: 10px;
+	}
+}

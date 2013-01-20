@@ -3,6 +3,23 @@
 	width: @width;
 }
 
+.clearfix {
+	*zoom: 1;
+
+	&:before, &:after {
+		content: ' ';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
 .reset-link-styles {
 	&, &:hover, &:visited {
 		color: inherit;
