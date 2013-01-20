@@ -1,0 +1,57 @@
+@import "mixins.less";
+
+/* TODO: clean up stuff into mixins.less once draft is done */
+
+header {
+	.contained;
+
+	h1 {
+		margin: 15px 0 10px;
+		display: block;
+		text-align: center;
+		font-size: 48px;
+
+		a {
+			.reset-link-styles;
+		}
+
+		&:before {
+			content: '';
+			margin: 15px auto;
+			display: block;
+
+			/* mixin */
+			background: url(/img/sfpg-logo.png) no-repeat top left;
+			width: 121px;
+			height: 120px;
+		}
+	}
+
+	nav {
+		display: table;
+		padding: 7px 0;
+		width: 100%;
+		table-layout: fixed;
+
+		border-top: solid 1px #c00;
+		border-bottom: solid 1px #c00;
+
+		a {
+			display: table-cell;
+			width: 100%;
+			overflow: hidden;
+			text-transform: uppercase;
+			text-align: center;
+
+			&:first-child {
+				text-align: left;
+			}
+
+			&:last-child {
+				text-align: right;
+			}
+
+			.reset-link-styles();
+		}
+	}
+}
