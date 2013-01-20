@@ -1,13 +1,17 @@
 {
-  "name": "sfpg-website",
-  "version": "0.0.1",
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  },
-  "dependencies": {
-    "statik": "*"
-  },
-  "main": "server.js",
-  "subdomain": "sfpg-website"
+	"name": "sfpg-website",
+	"version": "0.0.1",
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	},
+	"dependencies": {
+		"statik": "*"
+	},
+	"devDependencies": {
+		"grunt-contrib-less": "*",
+		"grunt-contrib-coffee": "*"
+	},
+	"main": "server.js",
+	"subdomain": "sfpg-website"
 }
