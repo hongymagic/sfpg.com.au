@@ -10,5 +10,37 @@
 		border-bottom: solid 1px #c00;
 		width: 800px;
 		height: 384px;
+
+		h2 {
+			font-style: italic;
+			letter-spacing: -1px;
+			color: #666;
+			text-align: center;
+		}
+
+		blockquote {
+			.contained(345px);
+			color: #c00;
+			position: relative;
+
+			&:before {
+				content: '';
+				background: url(/img/quote-open.png) top left;
+				display: block;
+				width: 15px;
+				height: 14px;
+				position: absolute;
+				top: 0; left: -16px;
+			}
+			&:after {
+				content: '';
+				background: url(/img/quote-close.png) top left;
+				display: block;
+				width: 15px;
+				height: 14px;
+				position: absolute;
+				bottom: 0; right: 0;
+			}
+		}
 	}
 }
