@@ -19,11 +19,18 @@ body {
 .hidden {
   display: none;
 }
-.reset-link-styles,
-.reset-link-styles:hover,
-.reset-link-styles:visited {
+.reset-a,
+.reset-anchor,
+.reset-a:hover,
+.reset-anchor:hover,
+.reset-a:visited,
+.reset-anchor:visited {
   color: inherit;
   text-decoration: none;
+}
+.reset-box-model {
+  margin: 0;
+  padding: 0;
 }
 .content {
   margin: 0 auto;
@@ -149,11 +156,18 @@ body {
 .hidden {
   display: none;
 }
-.reset-link-styles,
-.reset-link-styles:hover,
-.reset-link-styles:visited {
+.reset-a,
+.reset-anchor,
+.reset-a:hover,
+.reset-anchor:hover,
+.reset-a:visited,
+.reset-anchor:visited {
   color: inherit;
   text-decoration: none;
+}
+.reset-box-model {
+  margin: 0;
+  padding: 0;
 }
 footer {
   margin: 20px 0 0;
@@ -252,11 +266,18 @@ footer .copyright {
 .hidden {
   display: none;
 }
-.reset-link-styles,
-.reset-link-styles:hover,
-.reset-link-styles:visited {
+.reset-a,
+.reset-anchor,
+.reset-a:hover,
+.reset-anchor:hover,
+.reset-a:visited,
+.reset-anchor:visited {
   color: inherit;
   text-decoration: none;
+}
+.reset-box-model {
+  margin: 0;
+  padding: 0;
 }
 /* TODO: clean up stuff into mixins.less once draft is done */
 body > header {
@@ -329,9 +350,16 @@ body > header nav a:visited {
 .hidden {
   display: none;
 }
-.reset-link-styles,
-.reset-link-styles:hover,
-.reset-link-styles:visited {
+.reset-a,
+.reset-anchor,
+.reset-a:hover,
+.reset-anchor:hover,
+.reset-a:visited,
+.reset-anchor:visited {
   color: inherit;
   text-decoration: none;
+}
+.reset-box-model {
+  margin: 0;
+  padding: 0;
 }

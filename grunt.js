@@ -30,10 +30,7 @@ module.exports = function (grunt) {
 		}
 	});
 
-// Load npm tasks
-
 	grunt.loadNpmTasks('grunt-contrib-less');
-
 	grunt.registerTask('default', 'less');
 
 };

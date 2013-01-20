@@ -11,18 +11,25 @@
 		display: table;
 	}
 
-	&:after {
-		clear: both;
-	}
+	&:after { clear: both; }
 }
 
-.hidden {
-	display: none;
-}
+.hidden { display: none; }
 
-.reset-link-styles {
+//
+// HTML Element resets
+//
+// .reset-<html element>
+// .reset-<css model>
+
+.reset-a, .reset-anchor {
 	&, &:hover, &:visited {
 		color: inherit;
 		text-decoration: none;
 	}
+}
+
+.reset-box-model {
+	margin: 0;
+	padding: 0;
 }
