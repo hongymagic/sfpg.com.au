@@ -7,15 +7,13 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: '<json:package.json>',
 
-// Configure LESS => CSS
-
 		less: {
 			development: {
 				options: {
 					paths: ['public/css/less']
 				},
 				files: {
-					'public/css/styles.css': 'public/css/less/*.less'
+					'public/css/styles.css': 'public/css/less/*.less',
 				}
 			},
 
@@ -24,13 +22,44 @@ module.exports = function (grunt) {
 					paths: ['public/css/less']
 				},
 				files: {
-					'public/css/styles.css': 'public/css/less/*.less'
+					'public/css/styles.css': 'public/css/less/*.less',
 				}
 			}
+		},
+
+		coffee: {
+			compile: {
+				files: {
+					'public/js/internal.js': ['public/js/coffee/*.coffee']
+				}
+			}
+		},
+
+		concat: {
+			dist: {
+				src: [
+					'public/js/vendor/jquery.js',
+					'public/js/vendor/underscore.js',
+					'public/js/internal.js'
+				],
+				dest: 'public/js/app.js'
+			}
+		},
+
+		watch: {
+			files: [
+				'public/css/less/*.less',
+				['public/js/coffee/*.coffee']
+			],
+			tasks: 'less coffee concat'
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.registerTask('default', 'less');
+	grunt.loadNpmTasks('grunt-contrib-coffee');
+
+// Default task to run
+
+	grunt.registerTask('default', 'less coffee concat');
 
 };
