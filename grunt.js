@@ -40,6 +40,7 @@ module.exports = function (grunt) {
 				src: [
 					'public/js/vendor/jquery.js',
 					'public/js/vendor/underscore.js',
+					'public/js/vendor/backbone.js',
 					'public/js/internal.js'
 				],
 				dest: 'public/js/app.js'
