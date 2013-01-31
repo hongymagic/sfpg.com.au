@@ -14,6 +14,10 @@ body {
   color: inherit;
   text-decoration: none;
 }
+.reset-a.active,
+.reset-anchor.active {
+  color: #c00;
+}
 .reset-box-model {
   margin: 0;
   padding: 0;
@@ -37,6 +41,9 @@ body {
 #menu .item:visited {
   color: inherit;
   text-decoration: none;
+}
+#menu .item.active {
+  color: #c00;
 }
 #menu .item-hover:active,
 #menu .item-hover:hover {
@@ -112,6 +119,9 @@ body {
   color: inherit;
   text-decoration: none;
 }
+.content nav a.active {
+  color: #c00;
+}
 .content nav a:active,
 .content nav a:hover {
   color: #c00;
@@ -119,6 +129,7 @@ body {
 .content section {
   width: 525px;
   float: right;
+  font-size: 95%;
 }
 .content section h1,
 .content section h2,
@@ -129,6 +140,13 @@ body {
 .content section h2:first-child,
 .content section h3:first-child {
   margin-top: 0;
+}
+.content section h2,
+.content section strong {
+  color: #c00;
+}
+.content section strong {
+  font-weight: bold;
 }
 .content section .staff-profile header {
   border-bottom: 1px solid #c00;
@@ -148,6 +166,26 @@ body {
 .content section .staff-profile p {
   color: #555;
 }
+.content section.offices {
+  *zoom: 1;
+}
+.content section.offices:before,
+.content section.offices:after {
+  content: ' ';
+  display: table;
+}
+.content section.offices:after {
+  clear: both;
+}
+.content section.offices .contact {
+  float: left;
+  width: 230px;
+  color: #665;
+}
+.content section.offices .contact span,
+.content section.offices .contact a {
+  display: block;
+}
 
 @font-face {
   font-family: 'IntroLight';
@@ -165,6 +203,10 @@ body {
 .reset-anchor:visited {
   color: inherit;
   text-decoration: none;
+}
+.reset-a.active,
+.reset-anchor.active {
+  color: #c00;
 }
 .reset-box-model {
   margin: 0;
@@ -189,6 +231,9 @@ body {
 #menu .item:visited {
   color: inherit;
   text-decoration: none;
+}
+#menu .item.active {
+  color: #c00;
 }
 #menu .item-hover:active,
 #menu .item-hover:hover {
@@ -253,6 +298,9 @@ footer .offices .contact a:visited {
   color: inherit;
   text-decoration: none;
 }
+footer .offices .contact a.active {
+  color: #c00;
+}
 footer .offices .contact a.tel {
   margin-top: 10px;
 }
@@ -286,6 +334,10 @@ footer .copyright {
   color: inherit;
   text-decoration: none;
 }
+.reset-a.active,
+.reset-anchor.active {
+  color: #c00;
+}
 .reset-box-model {
   margin: 0;
   padding: 0;
@@ -310,6 +362,9 @@ footer .copyright {
   color: inherit;
   text-decoration: none;
 }
+#menu .item.active {
+  color: #c00;
+}
 #menu .item-hover:active,
 #menu .item-hover:hover {
   color: #c00;
@@ -331,6 +386,9 @@ body > header h1 a:hover,
 body > header h1 a:visited {
   color: inherit;
   text-decoration: none;
+}
+body > header h1 a.active {
+  color: #c00;
 }
 body > header h1:before {
   content: '';
@@ -370,6 +428,9 @@ body > header nav a:visited {
   color: inherit;
   text-decoration: none;
 }
+body > header nav a.active {
+  color: #c00;
+}
 body > header nav a:active,
 body > header nav a:hover {
   color: #c00;
@@ -383,6 +444,10 @@ body > header nav a:hover {
 .reset-anchor:visited {
   color: inherit;
   text-decoration: none;
+}
+.reset-a.active,
+.reset-anchor.active {
+  color: #c00;
 }
 .reset-box-model {
   margin: 0;
@@ -407,6 +472,9 @@ body > header nav a:hover {
 #menu .item:visited {
   color: inherit;
   text-decoration: none;
+}
+#menu .item.active {
+  color: #c00;
 }
 #menu .item-hover:active,
 #menu .item-hover:hover {

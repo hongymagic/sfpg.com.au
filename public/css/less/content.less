@@ -64,6 +64,7 @@
 	section {
 		width: 525px;
 		float: right;
+		font-size: 95%;
 
 		h1, h2, h3 {
 			&:first-child {
@@ -71,6 +72,14 @@
 			}
 
 			font-weight: 300;
+		}
+
+		h2, strong {
+			color: #c00;
+		}
+
+		strong {
+			font-weight: bold;
 		}
 
 		.staff-profile {
@@ -93,6 +102,21 @@
 
 			p {
 				color: #555;
+			}
+		}
+
+		&.offices {
+			.clearfix;
+
+			.contact {
+				float: left;
+				width: 230px;
+
+				color: #665;
+
+				span, a {
+					display: block;
+				}
 			}
 		}
 	}
