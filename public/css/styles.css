@@ -315,6 +315,7 @@ footer .social .facebook {
   display: block;
   width: 22px;
   height: 22px;
+  display: none;
 }
 footer .social .twitter {
   display: none;
