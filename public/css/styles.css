@@ -66,6 +66,7 @@ body {
   margin: 0 0 20px;
   padding: 0;
   width: 800px;
+  height: 385px;
 }
 .content .hero img {
   border-bottom: solid 1px #c00;
